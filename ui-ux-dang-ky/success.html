@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Đăng ký thành công | UI/UX Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="success-page">
+  <section class="success-card" aria-labelledby="successTitle">
+    <div class="success-icon" aria-hidden="true">✓</div>
+    <span class="eyebrow">BƯỚC 2 / 2 · HOÀN TẤT</span>
+    <h1 id="successTitle">Đăng ký thành công!</h1>
+    <p>Chào <strong id="userName">bạn</strong>. Tài khoản mẫu của bạn đã được xác nhận trên giao diện thực hành.</p>
+    <div class="summary">
+      <div><span>Trạng thái</span><strong>Đã hoàn tất</strong></div>
+      <div><span>Thiết kế</span><strong>Responsive</strong></div>
+      <div><span>Tiếp theo</span><strong>Đăng nhập</strong></div>
+    </div>
+    <a class="btn" href="index.html">Quay lại trang đăng ký</a>
+    <p class="meta">Đây là bài thực hành giao diện nên không gửi dữ liệu tới máy chủ.</p>
+  </section>
+</main>
+<script>
+const params=new URLSearchParams(location.search);
+const name=params.get("name");
+if(name){document.getElementById("userName").textContent=name;}
+</script>
+</body>
+</html>
