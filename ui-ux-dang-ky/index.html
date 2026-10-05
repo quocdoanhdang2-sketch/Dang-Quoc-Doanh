@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Bài thực hành UI/UX: giao diện đăng ký người dùng responsive">
+  <title>Đăng ký tài khoản | UI/UX Practice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="page">
+  <section class="brand-panel" aria-label="Giới thiệu">
+    <div>
+      <div class="brand">UX • PRACTICE</div>
+      <div style="margin-top:18vh">
+        <h1>Tạo tài khoản thật đơn giản.</h1>
+        <p>Biểu mẫu tập trung vào một nhiệm vụ duy nhất, nhãn rõ ràng, phản hồi lỗi ngay tại trường nhập và nút hành động lớn, dễ tiếp cận.</p>
+        <div class="principles">
+          <div class="principle"><span class="check">✓</span><div><strong>Rõ ràng</strong><span>Mỗi trường đều có nhãn và hướng dẫn ngắn.</span></div></div>
+          <div class="principle"><span class="check">✓</span><div><strong>Dễ thao tác</strong><span>Vùng bấm lớn, khoảng cách hợp lý theo Fitts' Law.</span></div></div>
+          <div class="principle"><span class="check">✓</span><div><strong>Responsive</strong><span>Bố cục tự chuyển sang một cột trên màn hình nhỏ.</span></div></div>
+        </div>
+      </div>
+    </div>
+    <small>Bài thực hành thiết kế hướng người dùng</small>
+  </section>
+
+  <section class="form-side">
+    <form class="card" id="registerForm" novalidate>
+      <span class="eyebrow">BƯỚC 1 / 2 · ĐĂNG KÝ</span>
+      <h2>Tạo tài khoản</h2>
+      <p class="sub">Điền các thông tin bên dưới. Trường có dấu <span class="required">*</span> là bắt buộc.</p>
+
+      <div class="field">
+        <label for="fullName">Họ và tên <span class="required">*</span></label>
+        <input id="fullName" name="fullName" type="text" autocomplete="name" placeholder="Ví dụ: Nguyễn Văn An" aria-describedby="fullNameError" required>
+        <p class="error" id="fullNameError" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="email">Email <span class="required">*</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com" aria-describedby="emailHint emailError" required>
+        <p class="hint" id="emailHint">Dùng email bạn thường xuyên truy cập.</p>
+        <p class="error" id="emailError" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="password">Mật khẩu <span class="required">*</span></label>
+        <div class="input-wrap">
+          <input class="password-input" id="password" name="password" type="password" autocomplete="new-password" minlength="8" placeholder="Tối thiểu 8 ký tự" aria-describedby="passwordHint passwordError" required>
+          <button class="toggle" type="button" data-target="password" aria-label="Hiện mật khẩu">Hiện</button>
+        </div>
+        <p class="hint" id="passwordHint">Tối thiểu 8 ký tự, nên kết hợp chữ và số.</p>
+        <p class="error" id="passwordError" aria-live="polite"></p>
+      </div>
+
+      <div class="field">
+        <label for="confirmPassword">Xác nhận mật khẩu <span class="required">*</span></label>
+        <div class="input-wrap">
+          <input class="password-input" id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Nhập lại mật khẩu" aria-describedby="confirmPasswordError" required>
+          <button class="toggle" type="button" data-target="confirmPassword" aria-label="Hiện mật khẩu xác nhận">Hiện</button>
+        </div>
+        <p class="error" id="confirmPasswordError" aria-live="polite"></p>
+      </div>
+
+      <label class="agree" for="terms">
+        <input id="terms" type="checkbox" required>
+        <span>Tôi xác nhận thông tin đã nhập là chính xác và đồng ý tiếp tục.</span>
+      </label>
+      <p class="error" id="termsError" aria-live="polite"></p>
+
+      <button class="btn" type="submit">Đăng ký tài khoản</button>
+      <p class="meta">Đã có tài khoản? <a href="#" onclick="return false">Đăng nhập</a></p>
+    </form>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
