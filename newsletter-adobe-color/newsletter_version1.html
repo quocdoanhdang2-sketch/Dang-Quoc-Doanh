@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trello Weekly — Ocean Focus</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root{
+      --primary:#0C66E4;
+      --secondary:#579DFF;
+      --accent:#0055CC;
+      --light:#CCE0FF;
+      --ink:#172B4D;
+      --surface:#F7FAFF;
+    }
+    body{background:var(--surface);color:var(--ink)}
+    .hero{background:linear-gradient(135deg,var(--accent),var(--primary) 55%,var(--secondary));color:#fff}
+    .brand-badge{background:#ffffff22;border:1px solid #ffffff40;color:#fff}
+    .logo-box{background:#fff;color:var(--primary)}
+    .cta-btn{background:#fff;color:var(--primary);border:0}
+    .cta-btn:hover{background:var(--light);color:var(--accent)}
+    .feature-icon{background:var(--light);color:var(--accent)}
+    .text-theme{color:var(--primary)}
+    .story-card{background:#fff}
+    .mock-board{background:var(--primary)}
+    .mock-list{background:#ebf3ff}
+    .mock-item{background:#fff}
+    .footer-box{background:var(--ink);color:#fff}
+    .version-nav a{color:var(--primary)}
+  </style>
+</head>
+<body>
+<div class="container newsletter-shell py-4 py-md-5">
+  <div class="d-flex justify-content-between align-items-center mb-4 version-nav">
+    <strong>UI/UX COLOR PRACTICE</strong>
+    <a href="newsletter_version2.html">Xem phiên bản 2 →</a>
+  </div>
+
+  <header class="hero p-4 p-md-5 mb-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="brand-badge mb-4"><span class="logo-box">T</span>TRELLO WEEKLY</span>
+        <h1>Biến kế hoạch thành tiến độ thực sự.</h1>
+        <p class="mt-4 mb-4">Một bản tin ngắn về cách tổ chức công việc, cộng tác cùng đội nhóm và giữ mọi ưu tiên trong cùng một nhịp.</p>
+        <a class="btn cta-btn" href="#features">Khám phá mẹo tuần này</a>
+      </div>
+      <div class="col-lg-5">
+        <div class="mock-board">
+          <div class="mock-list"><strong>Ý tưởng</strong><div class="mock-item"></div><div class="mock-item"></div></div>
+          <div class="mock-list"><strong>Đang làm</strong><div class="mock-item"></div><div class="mock-item"></div></div>
+          <div class="mock-list"><strong>Hoàn tất</strong><div class="mock-item"></div><div class="mock-item"></div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="mb-5">
+    <div class="text-center mb-4">
+      <span class="text-uppercase fw-bold small text-theme">Điểm nổi bật</span>
+      <h2 class="fw-bold mt-2">Làm việc rõ ràng hơn mỗi ngày</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <article class="card feature-card h-100 p-4">
+          <div class="feature-icon mb-3">01</div>
+          <h3 class="h5 fw-bold">Ưu tiên thông minh</h3>
+          <p class="mb-0 text-secondary">Chia công việc thành các thẻ nhỏ để biết chính xác việc nào cần làm trước.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card feature-card h-100 p-4">
+          <div class="feature-icon mb-3">02</div>
+          <h3 class="h5 fw-bold">Cộng tác dễ dàng</h3>
+          <p class="mb-0 text-secondary">Giữ trao đổi, deadline và người phụ trách ngay trong cùng một luồng công việc.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card feature-card h-100 p-4">
+          <div class="feature-icon mb-3">03</div>
+          <h3 class="h5 fw-bold">Theo dõi tiến độ</h3>
+          <p class="mb-0 text-secondary">Quan sát công việc di chuyển giữa các cột để cả nhóm luôn hiểu trạng thái hiện tại.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="card story-card p-4 p-md-5 mb-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <span class="text-uppercase fw-bold small text-theme">Mẹo của tuần</span>
+        <h2 class="fw-bold mt-2">Một board tốt bắt đầu từ ít cột hơn.</h2>
+        <p class="text-secondary mb-4">Hãy bắt đầu với ba trạng thái cơ bản: Cần làm, Đang làm, Hoàn tất. Chỉ thêm cột mới khi luồng công việc thật sự cần nó.</p>
+        <a class="btn btn-primary px-4 py-3 fw-bold" style="background:var(--primary);border-color:var(--primary)" href="#">Đọc thêm</a>
+      </div>
+      <div class="col-lg-5">
+        <div class="p-4 rounded-4" style="background:var(--light)">
+          <div class="fw-bold mb-2">Bộ màu 1 — Analogous Blue</div>
+          <div class="palette-strip">
+            <div class="swatch text-white" style="background:#0C66E4">#0C66E4</div>
+            <div class="swatch text-white" style="background:#579DFF">#579DFF</div>
+            <div class="swatch text-white" style="background:#0055CC">#0055CC</div>
+            <div class="swatch" style="background:#CCE0FF">#CCE0FF</div>
+            <div class="swatch text-white" style="background:#172B4D">#172B4D</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-box p-4 p-md-5 text-center">
+    <h2 class="h4 fw-bold">Trello Weekly</h2>
+    <p class="mb-2">Newsletter thực hành phối màu — Phiên bản Ocean Focus.</p>
+    <small>Bootstrap 5 · Responsive · Palette 1</small>
+  </footer>
+</div>
+</body>
+</html>
